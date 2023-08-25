@@ -11,23 +11,11 @@
     background-color: white;
     height: 200px;
 }
-
+#baglink{
+    color: black;
+  }
 .centerContainer {
     margin-top: 240px;
-}
-.chat-icon {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 20px;
-    right: 15px;
-    background-color: #fafffc00;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
 }
 
 /* for section 1 */
@@ -36,10 +24,6 @@
     font-size: 10px;
 }
 
-#baglink{
-    color: black;
-  }
-  
 /* for section 2 */
 
 .ans-offersSec {

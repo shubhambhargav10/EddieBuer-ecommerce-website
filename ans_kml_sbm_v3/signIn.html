@@ -5,15 +5,41 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <!-- <script src="login.js"></script> -->
-  <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="index.css" />
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="headerFooter.css">
+  <script src="login.js"></script>
+  <title>Sign In</title>
   <style>
-    #anasindex:hover{
-      cursor: pointer;
+    #mainsIgnInContainer {
+      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      height: 90vh;
+      align-items: center;
+    }
+
+    .ans-signInForm label {
+      display: flex;
+    }
+
+    .ans-signInForm input {
+      width: 400px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+    }
+
+    .ans-createAccBtn {
+      border-style: none;
+      background-color: rgb(51, 51, 51);
+      color: white;
+      width: 400px;
+      height: 38px;
+    }
+
+    .ans-createAccBtn:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
     }
   </style>
 </head>
@@ -40,8 +66,7 @@
       <div class="stores-sInsUp">
         <p id="locationSymbol-ans"><i class="fa fa-map-marker" style="font-size: 18px"></i></p>
         <p class="storesLink"><a href="#">&nbsp; &nbsp;Stores</a></p>
-        <!-- <p ><a href="signIn.html">Sign In / Sign Up</a></p> -->
-        <p><a id="userNameDisplay" href="signIn.html"></a></p>
+        <p><a href="signIn.html">Sign In / Sign Up</a></p>
       </div>
     </section>
 
@@ -52,12 +77,11 @@
         <i class="fa fa-search" style="font-size: 22px"></i>
       </div>
       <div class="ans-logoBox">
+        <!-- <img src="images/logo.png" alt="" /> -->
         <a href="index.html"><img src="images/logo.png" alt=""/></a>
       </div>
       <div class="cartBox">
-        <a id="baglink" href="cartpage.html"> <i class="fa fa-shopping-bag" style="font-size: 24px"></i></a>
-   
-        <span id="ans-cart-qty"></span>
+        <i class="fa fa-shopping-bag" style="font-size: 24px"></i>
       </div>
     </section>
 
@@ -66,34 +90,34 @@
       <div id="ans-navbarBox">
         <ul class="ans-navList">
           <li>
-            <a href="new.html"><strong>NEW!</strong></a>
+            <a href="#"><strong>NEW!</strong></a>
           </li>
           <li>
-            <a href="women.html"><strong>WOMEN</strong></a>
+            <a href="#"><strong>WOMEN</strong></a>
           </li>
           <li>
-            <a href="mens.html"><strong>MEN</strong></a>
+            <a href="#"><strong>MEN</strong></a>
           </li>
           <li>
-            <a href="kids.html"><strong>KIDS</strong></a>
+            <a href="#"><strong>KIDS</strong></a>
           </li>
           <li>
-            <a href="outerwear.html"><strong>OUTWEAR</strong></a>
+            <a href="#"><strong>OUTWEAR</strong></a>
           </li>
           <li>
-            <a href="gear.html"><strong>GEAR</strong></a>
+            <a href="#"><strong>GEAR</strong></a>
           </li>
           <li>
-            <a href="footwear.html"><strong>FOOTWEAR</strong></a>
+            <a href="#"><strong>FOOTWEAR</strong></a>
           </li>
           <li>
-            <a href="index.html"><strong>HOME</strong></a>
+            <a href="#"><strong>HOME</strong></a>
           </li>
           <li>
-            <a href="ans_kml_sbm_v3/sale.html"><strong>SALE</strong></a>
+            <a href="#"><strong>SALE</strong></a>
           </li>
           <li>
-            <a href="clearance.html"><strong style="color: red;">CLEARANCE</strong></a>
+            <a href="#"><strong style="color: red;">CLEARANCE</strong></a>
           </li>
           <li>
             <a href="#"><strong>GUIDEPOST</strong></a>
@@ -103,144 +127,27 @@
     </section>
   </header>
 
-  <!-- center container starts here -->
-  <div class="centerContainer">
-    <!-- todayOnlyContainer starts here -->
-    <div class="todayOnlyContainer">
-      <div class="todayOnlyText">
-        <h2 class="todayOnline-line">Today Only</h2>
-        <h3 style="color: rgb(47, 148, 141)">
-          SPRING ESSENTIALS STOCK UP SALE
-        </h3>
-        <p>
-          <strong>Save on Camp Fleece, Resilution tops, denim & more.</strong>
-        </p>
-
-        <!-- combao offer cotainer starts here -->
-        <div class="comboOffer-Container">
-          <span class="comboOffer-span">
-            <h3>BUY 2</h3>
-            <h3>SAVE 30%</h3>
-          </span>
-
-          <span id="comboOfferMiddleLine"></span>
-          <span class="comboOffer-span comboOffer-span-middle">
-            <h3>BUY 3</h3>
-            <h3>SAVE 40%</h3>
-          </span>
-          <span id="comboOfferMiddleLine"></span>
-          <span class="comboOffer-span">
-            <h3>BUY 4</h3>
-            <h3>SAVE 50%</h3>
-          </span>
-        </div>
-        <!-- combao offer cotainer ends here -->
-
-        <p>
-          Mix & match any men's or women's eligible styles for ultimate
-          savings.
-        </p>
-        <h4>
-          USE CODE : <span style="color: rgb(47, 148, 141)"> STOCKUP</span>
-        </h4>
-       <a id="anasindex" href="sale.html" style="text-decoration: none; color: white;"> <button class="todayOnlyContainer-btn ans-black-btn">SHOP NOW</button></a>
+  <div id="mainsIgnInContainer">
+    <div class="ans-signInContainer">
+      <div class="ans-txtAndbtn">
+        <h2>Don't Have An Account</h2>
+        <!-- <button class="ans-createAccBtn">CREATE A NEW ACCOUNT</button> -->
+        <button class="ans-createAccBtn" onclick="window.location.href='SignUp.html';">
+          CREATE A NEW ACCOUNT
+        </button>
       </div>
-      <div class="todayOnlyImages">
-        <img src="images/todayOnly.gif" alt="3 images" />
-        <!-- <img src="images/m_230314_hp_flash_V2.gif" alt=""> -->
+      <hr style="width: 400px" />
+      <div class="ans-formAndBtn">
+        <h2>Sign In to your account</h2>
+        <form class="ans-signInForm">
+          <label for="ans-email">Email</label>
+          <input id="ans-email" type="email" placeholder="example@email.com" />
+          <label for="ans-password">Password</label>
+          <input id="ans-password" type="Password" placeholder="Password" />
+        </form>
+        <button class="ans-createAccBtn ans-signInBtn">SIGN IN</button>
       </div>
     </div>
-    <!-- todayOnlyContainer ends here -->
-
-    <!-- mission container starts here -->
-    <div class="missionContainerMain">
-      <div class="missionContainer">
-        <h2>
-          We’re on a mission to inspire, enable & empower everyone to
-          experience the outdoors & live their adventure.
-        </h2>
-      </div>
-      <!-- mission container ends here -->
-    </div>
-
-    <!-- centerContainerImages starts here -->
-    <div class="centerContainerImages">
-      <img src="https://eddiebauer.scene7.com/is/image/EBContent/230313_hp_guide-pro_V1?$a8$" alt="" />;
-      <img src="https://eddiebauer.scene7.com/is/image/EBContent/230313_hp_secondary_V1?$a8$" alt="" />;
-      <img src="https://eddiebauer.scene7.com/is/image/EBContent/230313_hp_tops_V2?$a8$" alt="" />
-      <img src="https://eddiebauer.scene7.com/is/image/EBContent/230313_hp_trails_V1?$a8$" alt="" />
-    </div>
-
-    <!-- <div class="ans-bgImageAndtn-1">
-        
-    </div>
-    <div class="ans-bgImageAndtn-2">
-
-    </div> -->
-    <!-- centerContainerImages ends here -->
-
-    <!--  saleImgAndBtnsContainer starts here-->
-    <div class="saleImgAndBtnsContainer">
-      <img src="https://eddiebauer.scene7.com/is/image/EBContent/230306_hp_40off_V1?$a8$" alt="" />
-      <div class="saleImgAndBtns">
-        <button class="saleBtn ans-black-btn">SHOP WOMEN</button>
-        <button class="saleBtn ans-black-btn">SHOP MEN</button>
-        <button class="saleBtn ans-black-btn">SHOP KIDS</button>
-        <button class="saleBtn ans-black-btn">SHOP HOME</button>
-      </div>
-    </div>
-    <!--  saleImgAndBtnsContainer starts here-->
-
-    <!-- BUY ONLINE, PICK UP IN-STORE starts here -->
-    <div class="buyOnlyPickupStore">
-      <h3>BUY ONLINE, PICK UP IN-STORE</h3>
-      <p><b>LEARN MORE</b></p>
-    </div>
-    <!-- BUY ONLINE, PICK UP IN-STORE ends here -->
-
-    <!--3 images container with images and text starts here -->
-    <div id="ans3imageContainer">
-      <!--  -->
-      <div class="ans-3imageContainerDiv">
-        <img src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_flyline_V1?$jpg12$&scl=1" alt="" />
-        <p><b>BC Flyline Adaptive Ski Kit</b></p>
-        <p class="textFor3imageContainer">
-          Released in early 2022, Eddie Bauer’s BC Flyline Kit is the
-          industry’s first commercially available outerwear designed for mono-
-          and bi-skiers. This innovative design, built with Eddie Bauer skier
-          Trevor Kennison, won “Product of the Year” at the fourth annual
-          Outdoor Retailer’s Innovation Awards.
-        </p>
-        <p><b>LEARN MORE</b></p>
-      </div>
-
-      <div class="ans-3imageContainerDiv">
-        <img src="https://eddiebauer.scene7.com/is/image/EBContent/230131_hp_mrk3box_high-fives_V1?$jpg12$&scl=1"
-          alt="" />
-        <p><b>High Fives Foundation</b></p>
-        <p class="textFor3imageContainer">
-          Founded by Roy Tuscany in 2009, The High Fives Foundation is a
-          non-profit organization that serves athletes living with
-          life-altering injuries, such as spinal cord or traumatic brain
-          injury.
-        </p>
-        <p><b>LEARN MORE</b></p>
-      </div>
-
-      <div class="ans-3imageContainerDiv">
-        <img src="https://eddiebauer.scene7.com/is/image/EBContent/221227_hp_mrkt3box_TT_V1?$jpg12$&scl=1" alt="" />
-        <p><b>Abundance Abounds!</b></p>
-        <p class="textFor3imageContainer">
-          Lettuce show you a few of the Eddie Bauer products @redleafranch
-          loves to wears while working in his Tennessee vegetable garden,
-          where his current harvest is almost beyond be-leaf.
-          #JustOutsideYourDoor
-        </p>
-        <p><b>FOLLOW US ON TIKTOK</b></p>
-      </div>
-      <!--  -->
-    </div>
-    <!--3 images container with images and text starts here -->
   </div>
 
   <footer>
@@ -378,8 +285,7 @@
           <h4>BE THE FIRST TO KNOW</h4>
           <span id="firstspan"> Earn rewards and be the first to hear about sales and special offers.</span>
           <br>
-          <!-- <a href=""><button id="ans-signup-logoutButton">SIGN UP</button></a> -->
-          <button id="ans-signup-logoutButton" onclick="ansFooterBtn()" ></button>
+          <a href=""><button id="signup">SIGN UP</button></a>
           <br>
           <br>
           <br>
@@ -466,49 +372,51 @@
     </div> <!-- footer container main ends here -->
     <p class="termsAndConditions" style="text-align: center;">2023 Eddie Bauer LLC. All Rights Reserved</p>
   </footer>
-
-
 </body>
-<script src="script.js"></script>
+
 <script>
-  const username = localStorage.getItem("username");
-  const userNameDisplay = document.getElementById("userNameDisplay");
+  // document.querySelector(".ans-signInBtn").addEventListener("click", getData);
+  // var userCredArr = JSON.parse(localStorage.getItem("account-data")) || [];
 
-  if (username) {
-    userNameDisplay.textContent =  username;
-  } else {
-    userNameDisplay.textContent = "Sign In / Sign Up";
-  }
+  // function getData() {
+  //   event.preventDefault();
+  //   var email = document.getElementById("ans-email").value;
+  //     var password = document.getElementById("ans-password").value;
+  //   userCredArr.map(function (elem) {
 
-  const footerBtn = document.getElementById("ans-signup-logoutButton");
-  if (username) {
-    footerBtn.textContent =  "Log Out";
-  } else {
-    footerBtn.textContent = "Sign Up";
-  }
-
-  // function ansFooterBtn(){
-  //   if(footerBtn.textContent == "Log Out"){
-  //     window.location.href='signIn.html';
-  //   } else if( footerBtn.textContent == "Sign Up"){
-  //     window.location.href='signUp.html';
-  //   }
+  //     if (email == elem.email && password == elem.password) {
+  //         window.location.href = "index.html";
+  //         localStorage.setItem("username", elem.name);
+  //     } else if (email == "" || password == "") {
+  //        alert("Please Fill Your Deatils To Continue");
+  //     } 
+  //     else {
+  //       alert("Invalid credentials")
+  //     }
+  //   });
   // }
-  function ansFooterBtn(){
-    console.log("clicked")
-  if (footerBtn.textContent == "Log Out"){
-    window.location.href= "signIn.html";
-    localStorage.removeItem('username');
-    localStorage.removeItem("cartProduct");
-  } else if (footerBtn.textContent == "Sign Up"){
-    window.location.href = "SignUp.html";
-  }
-}
-document.getElementById("ans-cart-qty").textContent = addedTocart.length;
-    // for cartbox qty
-    // document.getElementById("ans-cart-qty").textContent = "";
-    
+  document.querySelector(".ans-signInBtn").addEventListener("click", getData);
+  var userCredArr = JSON.parse(localStorage.getItem("account-data")) || [];
 
+  function getData() {
+    event.preventDefault();
+    var email = document.getElementById("ans-email").value;
+    var password = document.getElementById("ans-password").value;
+
+    for (var i = 0; i < userCredArr.length; i++) {
+      if (email === userCredArr[i].email && password === userCredArr[i].password) {
+        localStorage.setItem("username", userCredArr[i].name);
+        window.location.href = "index.html";
+        return;
+      }
+    }
+
+    if (email === "" || password === "") {
+      alert("Please Fill Your Details To Continue");
+    } else {
+      alert("Invalid credentials");
+    }
+  }
 </script>
 
 </html>
